@@ -1,0 +1,21 @@
+.container {
+    display:flex;
+}
+
+.criminalsContainer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    flex-basis:26%;
+    border: .5px black dotted;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+}
