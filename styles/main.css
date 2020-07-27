@@ -23,5 +23,13 @@ h3 {
 .criminalList {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     
 }
+
+.officerList {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
