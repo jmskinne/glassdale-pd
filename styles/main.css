@@ -33,3 +33,7 @@ h3 {
     justify-content: space-evenly;
 }
 
+.filters {
+    display:flex;
+    justify-content: space-evenly;
+}

@@ -4,12 +4,15 @@ const contentTarget = document.querySelector(".filters__officer")
 const eventHub = document.querySelector(".container")
 
 contentTarget.addEventListener("change", (changeEvent) => {
-    const customEvent = new CustomEvent("officerSelect", {
-        detail : {
-            officerId : changeEvent.target.value
-        }
-    })
-    eventHub.dispatchEvent(customEvent)
+    if(changeEvent.target.id === "officerSelect") {   //refers to id in line 18
+        const selectedOfficer = changeEvent.target.value
+        const customEvent = new CustomEvent("officerSelect", {
+            detail : {
+                officer : selectedOfficer
+            }
+        })
+        eventHub.dispatchEvent(customEvent)
+    }
 })
 
 const render = officersCollection => {
