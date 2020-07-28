@@ -34,7 +34,7 @@ const render = (arrayOfOfficers) => {
             })
 
             contentTarget.innerHTML = `
-                <h2>Glassdale Arrests</h2>
+                <h2>Glassdale Officers</h2>
                 <article class="officerList">
                     ${officerHTMLRep}
                 </article>

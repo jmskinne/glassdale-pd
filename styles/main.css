@@ -37,3 +37,7 @@ h3 {
     display:flex;
     justify-content: space-evenly;
 }
+
+header {
+    margin-bottom: 1rem;
+}
