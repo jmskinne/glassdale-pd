@@ -1,6 +1,6 @@
-.container {
+ /* .container {
     display:flex;
-}
+}  */
 
 .criminalsContainer {
     display:flex;
@@ -18,4 +18,22 @@
 
 h3 {
     font-family: 'Libre Baskerville', serif;
+}
+
+.criminalList {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.officerList {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.filters {
+    display:flex;
+    justify-content: space-evenly;
 }
