@@ -55,7 +55,7 @@ eventHub.addEventListener("officerSelected", (officerEvent) => {
 
 eventHub.addEventListener("officerSelect", event => {
     const officerName = event.detail.officer
-    const arrayOfOfficers = useOfficers()
+    const arrayOfOfficers = useOfficers()                        //lines 58-60 are unnessary bc we just got name of officer
     const foundAOfficerObj = arrayOfOfficers.find(
         (officer) => {
             return parseInt(officerName) === officer.id
@@ -76,13 +76,13 @@ eventHub.addEventListener("officerSelect", event => {
 
 })
 
-const render = (arrayOfCrims) => {
+const render = (arrayOfCrims) => { //turning array into HTML
     let CrimHTML = ""
     arrayOfCrims.forEach(criminal => {
         CrimHTML += CriminalHTMLConverter(criminal)
     })
     contentTarget.innerHTML= `
-        <h2>Glassdale Criminals</h2>
+        <div class="crim_heading"><h2>Glassdale Criminals</h2></div>
         <article class="criminalList">
             ${CrimHTML}
         </article>
