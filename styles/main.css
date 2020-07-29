@@ -6,6 +6,7 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
+    flex:4
 }
 
 .card {
@@ -39,5 +40,40 @@ h3 {
 }
 
 header {
+    margin-bottom: 1rem;
+}
+
+.lists {
+    display:flex;
+}
+
+.noteListContainer {
+    flex:1;
+}
+
+.note {
+    flex-basis:26%;
+    border: .5px black dotted;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+.noteFormContainer {
+    display:flex;
+}
+
+#noteForm {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:1rem;
+    
+    
+}
+
+input,
+textarea {
     margin-bottom: 1rem;
 }
