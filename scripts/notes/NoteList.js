@@ -2,7 +2,7 @@ import {getNotes, useNotes} from "./NotesProvider.js"
 import {NoteHTMLConverter} from "./NoteHTMLConverter.js"
 
 
-const contentTarget = document.querySelector('.noteListContainer')
+const contentTarget = document.querySelector('.display-container')
 const eventHub = document.querySelector('.container')
 
 eventHub.addEventListener("showNotesClicked", customEvent =>{

@@ -3,7 +3,7 @@ import { useCriminals, getCriminals} from "./CriminalProvider.js"
 import { useConvictions} from "../convictions/ConvictionProvider.js"
 import { useOfficers } from "../officers/OfficerProvider.js"
 
-const contentTarget = document.querySelector('.criminalsContainer')
+const contentTarget = document.querySelector('.display-container')
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeSelected", (crimeEvent) => {
@@ -82,7 +82,7 @@ const render = (arrayOfCrims) => { //turning array into HTML
         CrimHTML += CriminalHTMLConverter(criminal)
     })
     contentTarget.innerHTML= `
-        <div class="crim_heading"><h2>Glassdale Criminals</h2></div>
+        
         <article class="criminalList">
             ${CrimHTML}
         </article>

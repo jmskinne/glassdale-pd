@@ -6,15 +6,16 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
-    flex:4
+    
 }
 
 .card {
-    flex-basis:26%;
+    flex-basis:25%;
     border: .5px black dotted;
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 2rem;
     padding: .5rem;
+    
 }
 
 h3 {
@@ -25,6 +26,9 @@ h3 {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 1px solid black;
+    padding:2rem;
+    
     
 }
 
@@ -37,6 +41,9 @@ h3 {
 .filters {
     display:flex;
     justify-content: space-evenly;
+    padding: 1rem;
+    align-items: baseline;
+    flex-wrap: nowrap;
 }
 
 header {
@@ -48,19 +55,34 @@ header {
 }
 
 .noteListContainer {
-    flex:1;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-.note {
+.display-container {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+/* .note {
     flex-basis:26%;
     border: .5px black dotted;
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 2rem;
     padding: .5rem;
-}
+} */
 
 .noteFormContainer {
     display:flex;
+    justify-content: space-around;
+    flex:1;
+    border: 1px black solid;
+    background-color: aliceblue;
+    margin-bottom: 1rem;
 }
 
 #noteForm {
@@ -76,4 +98,22 @@ header {
 input,
 textarea {
     margin-bottom: 1rem;
+}
+
+.crimheading {
+   text-align: center;
+}
+
+.filters__crime {
+    flex-basis:33%;
+}
+
+.filters__officer {
+    flex-basis:33%;
+
+}
+
+.noteListButton {
+    flex-basis:33%;
+
 }
