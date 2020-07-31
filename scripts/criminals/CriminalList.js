@@ -107,8 +107,15 @@ eventHub.addEventListener("click", (clickEvent) => {
 
 eventHub.addEventListener("associateClicked", event => {
     const associate = event.detail.associate
-    console.log(associate)
-    
+    const criminals = useCriminals()
+    const filteredAssociates = criminals.filter(
+        (crimObj) => {
+            if(associate === crimObj.id) {
+                
+            }
+
+        }
+    )    
 })
 //     if(clickEvent.target.id ===  "associateSelect") {
 //         const clickedCrim = clickEvent.target.value
