@@ -61,7 +61,7 @@ eventHub.addEventListener("officerSelect", event => {
             return parseInt(officerName) === officer.id
         }
     )
-    //console.log(foundAOfficerObj)
+    debugger
     
     const criminals = useCriminals()
     const filteredCriminals = criminals.filter(
@@ -71,7 +71,7 @@ eventHub.addEventListener("officerSelect", event => {
             
             }
         )
-    
+    debugger
     render(filteredCriminals)
 
 })
@@ -88,6 +88,35 @@ const render = (arrayOfCrims) => { //turning array into HTML
         </article>
     `
 }
+
+// const buttonTarget = document.querySelector(".buttonAssociate")
+
+eventHub.addEventListener("click", (clickEvent) => {
+    if(clickEvent.target.id.includes("associate")) {
+        const clickedAssociate = clickEvent.target.id
+        const customEvent = new CustomEvent("associateClicked", {
+            detail : {
+                associate : clickedAssociate
+            }
+        })
+        eventHub.dispatchEvent(customEvent)
+    }
+    
+
+})
+
+eventHub.addEventListener("associateClicked", event => {
+    const associate = event.detail.associate
+    console.log(associate)
+    
+})
+//     if(clickEvent.target.id ===  "associateSelect") {
+//         const clickedCrim = clickEvent.target.value
+//         console.log(clickedCrim)
+//     }
+    
+    
+// })
 
     
 

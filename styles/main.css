@@ -98,6 +98,12 @@ header {
 input,
 textarea {
     margin-bottom: 1rem;
+    padding: .7rem 1rem;
+    
+}
+
+input[type="text"]::placeholder {
+    text-align: left;
 }
 
 .crimheading {
