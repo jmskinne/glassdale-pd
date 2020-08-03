@@ -3,7 +3,7 @@ import { useCriminals, getCriminals} from "./CriminalProvider.js"
 import { useConvictions} from "../convictions/ConvictionProvider.js"
 import { useOfficers } from "../officers/OfficerProvider.js"
 
-const contentTarget = document.querySelector('.display-container')
+const contentTarget = document.querySelector('.criminalsContainer')
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeSelected", (crimeEvent) => {
@@ -28,30 +28,7 @@ eventHub.addEventListener("crimeSelected", (crimeEvent) => {
     )
     render(filteredCrims)
 })
-/*
-eventHub.addEventListener("officerSelected", (officerEvent) => {
-    const officerName = officerEvent.detail.officer
-    const arrayOfOfficers = useOfficers()
 
-    const foundAOfficer = arrayOfOfficers.find(
-        (officer) => {
-            return officerName === officer.id
-        }
-    )
-    const criminals = useCriminals()
-    
-    
-    const filteredCrims = criminals.filter(
-        (criminalObj) => {
-            return foundAOfficer.name === criminalObj.arrestingOfficer
-            
-                
-        }
-    )
-    render(filteredCrims)
-})
-
-*/
 
 eventHub.addEventListener("officerSelect", event => {
     const officerName = event.detail.officer
@@ -71,7 +48,7 @@ eventHub.addEventListener("officerSelect", event => {
             
             }
         )
-    debugger
+    
     render(filteredCriminals)
 
 })
@@ -88,42 +65,6 @@ const render = (arrayOfCrims) => { //turning array into HTML
         </article>
     `
 }
-
-// const buttonTarget = document.querySelector(".buttonAssociate")
-
-eventHub.addEventListener("click", (clickEvent) => {
-    if(clickEvent.target.id.includes("associate")) {
-        const clickedAssociate = clickEvent.target.id
-        const customEvent = new CustomEvent("associateClicked", {
-            detail : {
-                associate : clickedAssociate
-            }
-        })
-        eventHub.dispatchEvent(customEvent)
-    }
-    
-
-})
-
-eventHub.addEventListener("associateClicked", event => {
-    const associate = event.detail.associate
-    console.log(associate)
-    
-})
-//     if(clickEvent.target.id ===  "associateSelect") {
-//         const clickedCrim = clickEvent.target.value
-//         console.log(clickedCrim)
-//     }
-    
-    
-// })
-
-    
-
-
-
-
-
 
 export const CriminalList = () => {
     getCriminals()

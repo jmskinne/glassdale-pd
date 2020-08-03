@@ -26,3 +26,8 @@ const render = (noteArray) => {
 
     contentTarget.innerHTML = notesConvertedToStrings
 }
+
+eventHub.addEventListener("noteStateChanged", () => {
+    const newNotes = useNotes()
+    render(newNotes)
+})

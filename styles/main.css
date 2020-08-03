@@ -123,3 +123,8 @@ input[type="text"]::placeholder {
     flex-basis:33%;
 
 }
+
+.associate-container {
+    margin-left:1rem;
+
+}
