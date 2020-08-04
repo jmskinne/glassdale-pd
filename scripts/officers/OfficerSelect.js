@@ -11,7 +11,7 @@ contentTarget.addEventListener("change", (changeEvent) => {
                 officer : selectedOfficer
             }
         })
-        debugger
+        
         eventHub.dispatchEvent(customEvent)
     }
 })

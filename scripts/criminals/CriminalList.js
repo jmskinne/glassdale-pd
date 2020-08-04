@@ -2,6 +2,7 @@ import { CriminalHTMLConverter } from "./CriminalHTMLConverter.js"
 import { useCriminals, getCriminals} from "./CriminalProvider.js"
 import { useConvictions} from "../convictions/ConvictionProvider.js"
 import { useOfficers } from "../officers/OfficerProvider.js"
+import { AlibiDialog } from "../associates/AssociateCrimList.js"
 
 const contentTarget = document.querySelector('.criminalsContainer')
 const eventHub = document.querySelector(".container")
@@ -38,7 +39,7 @@ eventHub.addEventListener("officerSelect", event => {
             return parseInt(officerName) === officer.id
         }
     )
-    debugger
+    
     
     const criminals = useCriminals()
     const filteredCriminals = criminals.filter(
@@ -63,6 +64,7 @@ const render = (arrayOfCrims) => { //turning array into HTML
         <article class="criminalList">
             ${CrimHTML}
         </article>
+        ${AlibiDialog()}
     `
 }
 

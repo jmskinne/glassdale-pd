@@ -37,7 +37,7 @@ const render = () => {
             <button id="saveNote">Save Note</button>
         </form>
     `
-    document.getElementById('noteForm').reset()
+    
 }
 
 export const NoteForm = () => {
