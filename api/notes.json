@@ -1,92 +1,36 @@
 {
   "notes": [
     {
-      "title": "t",
-      "content": "test",
-      "criminalName": "t",
-      "author": "te",
-      "timestamp": 1596047260736,
+      "title": "Capt Maggie",
+      "content": "Witnesses mention pickup truck, Maggie drives one",
+      "criminalName": "",
+      "author": "Mark",
+      "timestamp": 1596555869052,
       "id": 1
-    },
-    {
-      "title": "q",
-      "content": "w",
-      "criminalName": "r",
-      "author": "t",
-      "timestamp": 1596047331049,
-      "id": 2
-    },
-    {
-      "title": "b",
-      "content": "t",
-      "criminalName": "y",
-      "author": "r",
-      "timestamp": 1596047914737,
-      "id": 3
-    },
-    {
-      "title": "t",
-      "content": "r",
-      "criminalName": "r",
-      "author": "t",
-      "timestamp": 1596048011772,
-      "id": 4
-    },
-    {
-      "title": "Does",
-      "content": "This",
-      "criminalName": "Work",
-      "author": "Right?",
-      "timestamp": 1596048559338,
-      "id": 5
-    },
-    {
-      "title": "t",
-      "content": "e",
-      "criminalName": "s",
-      "author": "t",
-      "timestamp": 1596048898242,
-      "id": 6
-    },
-    {
-      "title": "Did",
-      "content": "I",
-      "criminalName": "Break",
-      "author": "This?",
-      "timestamp": 1596049374439,
-      "id": 7
-    },
-    {
-      "title": "What",
-      "content": "happens",
-      "criminalName": "when",
-      "author": "???",
-      "timestamp": 1596128226005,
-      "id": 8
     },
     {
       "title": "Test",
       "content": "Test",
-      "criminalName": "te",
-      "author": "st",
-      "timestamp": 1596206202041,
-      "id": 9
+      "criminalName": "Test",
+      "author": "Test",
+      "timestamp": 1596558006892,
+      "id": 2
     },
     {
-      "title": "Test",
-      "content": "TEST",
-      "criminalName": "TEST",
-      "author": "TEST",
-      "timestamp": 1596208719531,
-      "id": 10
+      "title": "Pets",
+      "content": "Witness mentioned pets, ckecking for animal abuse convictions and alibi",
+      "criminalName": "",
+      "author": "Mark",
+      "timestamp": 1596559303286,
+      "id": 3
     },
     {
-      "title": "TEST 2",
-      "content": "TEST 2",
-      "criminalName": "TEST 2",
-      "author": "TEST 2",
-      "timestamp": 1596208905178,
-      "id": 11
+      "title": "Did",
+      "content": "IT",
+      "criminalName": "WORK",
+      "author": "This time",
+      "timestamp": 1596559326976,
+      "id": 4
     }
   ]
 }

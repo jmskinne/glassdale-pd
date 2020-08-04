@@ -39,7 +39,7 @@ eventHub.addEventListener("officerSelect", event => {
             return parseInt(officerName) === officer.id
         }
     )
-    debugger
+    
     
     const criminals = useCriminals()
     const filteredCriminals = criminals.filter(
