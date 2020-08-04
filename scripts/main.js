@@ -6,6 +6,8 @@ import { NoteForm } from "./notes/NoteForm.js"
 import { ShowNoteButton } from "./notes/ShowNotesButton.js"
 import "./notes/NoteList.js"
 import "./associates/AssociateCrimList.js"
+import "./witness/WitnessList.js"
+import { ShowWitness } from "./witness/ShowWitnessButton.js"
 
 
 CriminalList()
@@ -14,5 +16,7 @@ OfficerList()
 OfficerSelect()
 NoteForm()
 ShowNoteButton()
+ShowWitness()
+
 
 
