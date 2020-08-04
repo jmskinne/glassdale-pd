@@ -1,9 +1,9 @@
 import {useCriminals} from "../criminals/CriminalProvider.js"
-import { AssociateHTMLConverter } from "./AssociateHTML.js" 
+//import { AssociateHTMLConverter } from "./AssociateHTML.js" 
 
 
 const eventHub = document.querySelector(".container")
-const buttonTarget = document.querySelector(".associate-container")
+//const buttonTarget = document.querySelector(".associate-container")
 
 // eventHub.addEventListener("click", (clickEvent) => {
 //     if(clickEvent.target.id.includes("associate")) {
@@ -20,6 +20,7 @@ const buttonTarget = document.querySelector(".associate-container")
 // })
 
 eventHub.addEventListener("click", (clickEvent) => {
+   
     if(clickEvent.target.id.includes("associate")) {
         const clickedAssociate = clickEvent.target.id
         const customEvent = new CustomEvent("associateClicked", {
@@ -35,31 +36,65 @@ eventHub.addEventListener("click", (clickEvent) => {
 
 
 eventHub.addEventListener("associateClicked", event => {
+    const contentTarget = document.querySelector(".alibiDialog")
     const crimID = event.detail.associate.split("--")[1]
     console.log(crimID)
     const allCriminals = useCriminals()
     const crim = allCriminals.find((criminal) => {
         return criminal.id === parseInt(crimID)
     })
-    console.log(crim)
+    contentTarget.innerHTML = `
+        ${crim.known_associates.map(associates => {
+            //moved HTMLconverter to here
+            return `
+                <h5>Name :${associates.name}</h5>
+                <p>Statement : ${associates.alibi}
+            `
+        }).join("")
+    }`
 
-    
-    const knownAssociates = crim.known_associates
-    console.log(knownAssociates)
-    render(knownAssociates)
+    contentTarget.showModal()
 })
 
-const render = (associateArray) => {
-    const toHTMLrep = associateArray.map(
-        (associateArray) => {
-            return AssociateHTMLConverter(associateArray)
-        }
-    ).join("")
-    buttonTarget.innerHTML = toHTMLrep
-
-
-
+export const AlibiDialog = () => {
+    return `
+        <dialog class="alibiDialog">
+        <dialog>
+    `
 }
+
+    
+
+
+
+
+
+
+
+
+//part of original working code on eventHub, refactored to add dialog box
+    //     console.log(crim)
+
+    
+//     const knownAssociates = crim.known_associates
+//     console.log(knownAssociates)
+//     render(knownAssociates)
+// })
+
+
+
+//part of original working code - refactored to add dialog box
+// const render = (associateArray) => {
+//     const toHTMLrep = associateArray.map(
+//         (associateArray) => {
+//             return AssociateHTMLConverter(associateArray)
+//         }
+//     ).join("")
+//     buttonTarget.innerHTML = toHTMLrep
+
+
+
+// }
 
 
 
