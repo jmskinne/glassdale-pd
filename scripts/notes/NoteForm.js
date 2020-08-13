@@ -23,26 +23,6 @@ eventHub.addEventListener("click", clickEvent => {
 })
 
 
-contentTarget.addEventListener("change", (selectEvent) => {
-        if(selectEvent.target.id === "noteAboutCriminal") {
-            console.log(selectEvent.target.value)
-            const selectedCrim = selectEvent.target.value
-            const crimEvent = new CustomEvent("criminalSelected", {
-                detail : {
-                    criminalId : selectedCrim //send obj {criminalId: criminal--1}
-                }
-        })
-        eventHub.dispatchEvent(crimEvent)
-    }
-        
-})
-
-eventHub.addEventListener("criminalSelected", (crimeEvent) => {
-    console.log(crimeEvent.detail)
-    const selectedCriminal = crimeEvent.detail.criminalId //gives value 1,2 etc
-    console.log(selectedCriminal)
-    
-})
 
 
 
@@ -77,6 +57,3 @@ export const NoteForm = () => {
 }
 
 
-//<input type="text" id="noteAboutCriminal" placeholder="Criminal Referenced" />
-// option value="criminal--1">Bob</option>
-// <option value="criminal--2">Sam</option>
