@@ -7,46 +7,6 @@
       "timestamp": 1596555869052,
       "id": 1,
       "criminalId": 2
-    },
-    {
-      "title": "Test",
-      "content": "TESt 2",
-      "author": "Mark",
-      "timestamp": 1597261835130,
-      "id": 2,
-      "criminalId": 15
-    },
-    {
-      "title": "Test",
-      "content": "Test",
-      "criminalId": 3,
-      "author": "This?",
-      "timestamp": 1597292438733,
-      "id": 3
-    },
-    {
-      "title": "No 8",
-      "content": "Number 8",
-      "criminalId": 8,
-      "author": "Mark",
-      "timestamp": 1597293734783,
-      "id": 4
-    },
-    {
-      "title": "Does it",
-      "content": "Work Right?",
-      "criminalId": 91,
-      "author": "James M Skinner",
-      "timestamp": 1597294588301,
-      "id": 5
-    },
-    {
-      "title": "Does",
-      "content": "it work",
-      "criminalId": 13,
-      "author": "Thomas T",
-      "timestamp": 1597294969214,
-      "id": 6
     }
   ]
 }
