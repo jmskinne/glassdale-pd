@@ -9,7 +9,7 @@ const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("crimeSelected", (crimeEvent) => {
     //Filter displayed criminals by the crime that was chosen (crimeId)
-
+    console.log(crimeEvent.detail)
     const selectedCrimeByUser = crimeEvent.detail.crimeId
 
     //get crime name because the criminal data is stored
