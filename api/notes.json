@@ -1,12 +1,20 @@
 {
   "notes": [
     {
-      "title": "Capt Maggie",
-      "content": "Witnesses mention pickup truck, Maggie drives one",
-      "author": "Mark",
-      "timestamp": 1596555869052,
-      "id": 1,
-      "criminalId": 2
+      "title": "This",
+      "content": "Is a Test",
+      "criminalId": 14,
+      "author": "James B",
+      "timestamp": 1597347418820,
+      "id": 1
+    },
+    {
+      "title": "One",
+      "content": "More",
+      "criminalId": 5,
+      "author": "M Skin",
+      "timestamp": 1597347458206,
+      "id": 2
     }
   ]
 }
