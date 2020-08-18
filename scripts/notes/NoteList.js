@@ -14,6 +14,7 @@ eventHub.addEventListener("showNotesClicked", customEvent =>{
 eventHub.addEventListener("click", clickEvent => {
     if(clickEvent.target.id.startsWith("deleteNote--")) {
         const [prefix, id] = clickEvent.target.id.split("--")
+        
 
         deleteNote(id).then(
             () => {

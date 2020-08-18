@@ -27,7 +27,7 @@ export const deleteNote = noteId => {
 }
 
 export const EditNote = note => {
-    return fetch(`http://localhost:8088/notes/${noteId}`, {
+    return fetch(`http://localhost:8088/notes/${note.id}`, {
         method: "PUT",
         headers : {
             "Content-Type" : "application/json",
